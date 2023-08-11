@@ -125,9 +125,20 @@ def login_view(request):
 
 @login_required
 def logout_view(request):
+    content=True
+    content1=False
+    content2=False
+    context={
+       
+        'content':content,
+        'content1':content1,
+        'content2':content2,
+    }
     if request.method=='POST':
+        
+        
         logout(request)
         return redirect('/login/')
-    return render(request,'items/logout.html',{})
+    return render(request,'items/logout.html',context)
 
         

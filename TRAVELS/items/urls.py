@@ -8,6 +8,7 @@ urlpatterns=[
     path('route/<int:id>',route_view),
     path('booking_list/',booking_list_view),
     path('register/',registration_view),
+    path('accounts/login/',login_view),
     path('login/',login_view),
     path('logout/',logout_view),
 ]
