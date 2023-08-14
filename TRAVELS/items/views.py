@@ -75,19 +75,7 @@ def route_view(request,id=None):
         
         return render(request,'items/route.html',context=context)
 
-@login_required
-def booking_list_view(request):
-    book=booking.objects.all()
-    content=True
-    content1=False
-    content2=False
-    form={
-        'book':book,
-        'content':content,
-        'content1':content1,
-        'content2':content2,
-    }    
-    return render(request,'items/booking_list.html',form)
+
 
 def registration_view(request):
     user=UserCreationForm(request.POST or None)

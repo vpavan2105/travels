@@ -1,13 +1,188 @@
 {%extends 'items/base.html' %}
 {%block content%}
+<center style="border:2px solid black;background-color:rgba(51,51,225,0.5);font-family"><h1>Details<h1></center>
+<div class="details">
+<h1>AGENCY ID:{{des.id}}</h1>
+<h1>DESTINATION ID:{{des.destination_id}}</h1>
+<h1>AGENCY NAME:{{des.name}}</h1>
+<h1>DESTINATION:{{des.travel}}</h1>
+</div>
 
-<h1>{{des.id}}</h1>
-<h1>{{des.name}}</h1>
-<h1>{{des.destination_id}}</h1>
-<h1>{{des.travel}}</h1>
-<h1>{{des.agency_id}}</h1>
 
-<p>startingpoint<p>
+
     <hr>
+    {%load static%}
+    <div class="map">
+    {%if des.destination_id == 1234 %}
+    
+     <img src="{%static "items/chennai.webp"%}" style="width:100%;height:100%">
+     <div class="places">
+        <p>Kanyakumari – Where the oceans meet</p>
+        <p>Yelagiri – A retreat in nature’s lap
+        </p>
+        <p>Nagalapuram – A picturesque getaway
+        </p>
+        <p>Mahabalipuram – The land of artistry
+        </p>
+        <p>Tranquebar – An ancient Danish colony
+        </p>
+        <p>Kanchipuram – A gorgeous temple town
+        </p>
+        <p>Madurai – Athens of the East
+        </p>
+       
+    </div>
+    {%elif des.destination_id == 1232%}
+    <img src="{%static "items/hyderabad.webp"%}" style="width:100%;height:100%">
+    <div class="places">
+        <p>
+            Ananthagiri Hills – Ooty of Telangana
+        </p>
+        <p>Hyderabad – the city of pearls
+        </p>
+        <p>Vizag/Vishakhapatnam – Oldest port cities
+        </p>
+        <p>Vijayawada – The city of victory
+        </p>
+        <p>Tirupati – The spiritual capital of Andhra
+        </p>
+        <p>
+            Gandikota – The Grand Canyon of India
+        </p>
+        <p>Srisailam – Sacred ancient shrine
+
+        </p>
+        <p>Nagarjuna Sagar – World’s largest masonry dam
+        </p>
+        <p>Warangal – One of the Heritage cities of India
+        </p>
+    </div>   
+    {%elif des.destination_id == 1231%}
+    <img src="{%static "items/delhi.webp"%}" style="width:100%;height:100%">
+     <div class="places">
+        <p>Delhi – Capital of India</p>
+        <p>Chandigarh – City Beautiful</p>
+        <p>Agra – The long-lost empire
+        </p>
+        <p>Haridwar-Rishikesh – Where nature meets culture
+        </p>
+        <p>Varanasi – For the wandering souls
+        </p>
+     </div>
+    {%elif des.destination_id == 1223%}
+    <img src="{%static "items/jaipur.jpg"%}" style="width:100%;height:100%">
+   <div class="places">
+     <p>Neemrana – The heart of the golden triangle
+    </p>
+    <p>Jaipur – The pink city</p>
+    <p>Agra – The City of Taj Mahal
+    </p>
+    <p>Dharamshala – A sensory rejuvenation
+    </p>
+    <p>Shimla – A complete Himalayan destination
+    
+  </div>
+    {%elif des.destination_id == 1221%}
+    <img src="{%static "items/mumbai.webp"%}" style="width:100%;height:100%">
+    <div class="places">
+        <p>Lonavala – A true Jewel of the Sahyadri
+        </p>
+        <p>Pune – An urban destination with a difference
+        </p>
+        <p>Nashik – The wine country of India
+        </p>
+        <p>Mahabaleshwar – Of strawberry fields and mighty mountains
+        </p>
+        <p>Shirdi – The hallowed grounds of Sai Baba
+        </p>
+        <p>Matheran – To the lush sweeps of the Western Ghats
+        </p>
+    </div>
+    {%elif des.destination_id == 1239%}
+    <img src="{%static "items/gujarat.webp"%}" style="width:100%;height:100%">
+    <div class="places">
+        <p>Dwarka – India’s submerged ancient city
+        </p>
+        <p>Silvassa – A slice of Portuguese history
+        </p>
+        <p>Kachchh – The greenest of the desert state
+
+        </p>
+        <p>Statue of unity – World’s tallest statue & pride of India
+
+        </p>
+        <p>Surat – Land of diamonds
+        </p>
+        <p>Jaisalmer – The El Dorado of India
+        </p>
+        <p>Kumbhalgarh – Of cuisine, culture, and craft
+        </p>
+    </div>
+
+    {%elif des.destination_id == 1240%}
+    <img src="{%static "items/banglore.webp"%}" style="width:100%;height:100%">
+    <div class="places">
+        <p>Bheemeshwari – The Fishing Village of Karnataka
+        </p>
+        <p>Mysore – The City of Palaces
+        </p>
+        <p>Pondicherry – Of French heritage and colonial vibes
+        </p>
+        <p>Gokarna – Goa of the South
+        </p>
+        <p>Hampi – Reminiscence of ancient royalty
+        </p>
+        <p>Agumbe – The last rainforests of India
+        </p>
+        <p>Nandi Hills – For day treks and mountain air
+        </p>
+    </div>
+    {%elif des.destination_id == 1237%}
+    <img src="{%static "items/kerala.webp"%}" style="width:100%;height:100%">
+     <div class="places">
+        <p>cochin
+        </p>
+        <p>perumbavur
+        </p>
+        <p>kodaikkanal
+        </p>
+        <p>madurai
+        </p>
+        <p>palaruvi waterfalls
+        </p>
+     </div>
+    {%elif des.destination_id == 1236%}
+    <img src="{%static "items/kolkata.webp"%}" style="width:100%;height:100%">
+    <div class="places">
+        <p>Santiniketan – The Land of Rabindranath Tagore
+        </p>
+        <p>Sunderbans – The Largest Mangrove Forestation in the World
+        </p>
+        <p>Gangani – Bengal’s Grand Canyon
+        </p>
+        <p>Tendrabon – The Mystical Valley
+        </p>
+        <p>Madarmani – the beach getaway
+        </p>
+        <p>Digha – Brighton of the East
+        </p>
+    </div>
+
+    {%elif des.destination_id == 1238%}
+    <img src="{%static "items/hyderabad.webp"%}" style="width:100%;height:100%">
+<div class="places">
+    <p>
+       Hyderabad - City of Perals
+    </p>
+    <p> Warangal - The City of Kakatiya
+    </p>
+    <p> Nalgonda
+    </p>
+
+</div>
+
+    {%endif%}
+
+    <div>
 {%endblock content%}
 
