@@ -7,7 +7,7 @@ from django.contrib.auth import login,logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm,AuthenticationForm
 
-@login_required
+
 def home_view(request):
     content=True
     content1=True
@@ -74,8 +74,10 @@ def route_view(request,id=None):
         context['des']=des
         
         return render(request,'items/route.html',context=context)
-
-
+@login_required
+def about_view(request):
+    context={}
+    return render(request,'items/about.html',context)
 
 def registration_view(request):
     user=UserCreationForm(request.POST or None)

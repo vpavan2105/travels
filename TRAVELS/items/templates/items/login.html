@@ -2,16 +2,18 @@
 {%block content%}
 {%if not request.user.is_authenticated%}
 
-<div class="form-style" style="">
-    
-    <form method='POST' action='.'>
+<div class="form-container" >
+    {%load static%}
+    <img src="{%static "items/background.jpeg" %}">
+    <p style="color:red;font-size:13px">LOGIN REQUIRED</p>
+    <form method='POST' action='.' >
          {%csrf_token%}
          {{user.as_p}}
          <button class="button" type="submit">Login</button>
     </form>   
 
+    <p class="line">If you not registered click here<a href="/register/" class="links">Register</a></p> 
 </div>
-    <p class="line">if you not register click here<a href="/register/" class="links">Register</a></p> 
 
 {%else%}
     <p class="line">you are logged in ,do you want to <a href="/logout/" class="links">Logout</a></p>

@@ -1,55 +1,57 @@
 
-    <html>
-        <head>
+<html>
+     <head>
              
-            <title>TRAVEL BOOKING</title>
-            <meta name="viewport" content="width=device-width,initial-scale=1">
-            <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-            <style>
+        <title>TRAVEL BOOKING</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
 
-                .button {margin-left:5px;padding:6px;border-radius:8px;border:1px solid rgb(51,51,225);transition-duration:1s;}
-          .button:hover {background-color:blue;color:white}
-               body   {font-family:georgia;margin:0px;display:flex;flex-direction:column;min-height:100%;}
-                main  {flex:1}
-                footer {background-color:rgba(0,0,0,0.8)}
-              .link   {border:2px solid blue;transition-duration:1s;text-align:center;background-color:rgba(0,0,0,0.2);font-size:25px;color:#00539C;text-decoration:none;padding:2px;border-radius:4px;margin-bottom:1px}  
-              .link:hover {text-decoration:underline;background-color:rgba(248, 240, 244, 0.6);border:none}
-                  form {border:2px solid black;font-color:taupe;}
-                 .home {display:grid;grid-template-columns:19.5% 19.5% 19.5% 19.5% 19.5%;align-items:center;background-color:black;justify-content:space-between;}
-                 .line {padding-left:30px;color:blue}
-          .destination {text-decoration:none;border:2px solid black;border-radius:1px 10px 1px 10px; padding:5px;color:white}
-             .content1 {display:grid;grid-template-columns:64% 35%;justify-content:space-between;border:20px solid #00539C;background-color:taupe;}
-           .img-scroll {overflow:auto;white-space:nowrap;width:200px}
-               .agency {max-width:250px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);text-align:center;background-color:white}
-      .explore-items   {display:grid;grid-template-columns:auto auto;justify-content:space-around;padding:5px;background-color:#00539C;grid-gap:5px}
-            .explore   {display:grid;grid-template-columns:60% 35%;justify-content:space-between;background-color:taupe;align-items:center} 
-                .info  {display:grid;grid-template-columns:auto auto auto;justify-content:space-evenly;font-size:15px;color:white;align-items:center}
-              .details {font-size:10px;border:1px solid grey;margin:2px;color:rgba(26, 40, 62, 1)}
-              .map     {display:grid;grid-template-columns:60% 35%;justify-content:space-evenly}
-               .places {font-size:15px;color:blue;font-family:fantasy} 
-             .links    {text-decoration:none;border:1px solid rgb(51,51,225);border-radius:3px;padding:5px;color:white;background-color:blue;margin:2px}
-                .book  {display:grid;grid-template-columns:35% 40% 20%;justify-content:space-evenly;align-items:center;background-color:taupe}
-            @media only screen and (max-width:600px) {
-               .img-scroll {width:150px}
-               .link {font-size:17px}
-               
-               .places {font-size:12px}
-            }    
-            </style>
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Cutive+Mono&family=Righteous&display=swap" rel="stylesheet">
-        </head>
-        
+            body   {font-family:georgia;margin:0px;display:flex;flex-direction:column;min-height:100%;}
+            main  {flex:1}
+            .button {margin-left:5px;padding:6px;border-radius:8px;border:1px solid rgb(51,51,225);transition-duration:1s;}
+            .button:hover {background-color:blue;color:white}
+            footer {background-color:rgba(0,0,0,0.8)}
+            .content1 {display:grid;grid-template-columns:64% 35%;justify-content:space-between;border:20px solid #00539C;background-color:taupe;}
+            form {border:2px solid black;font-color:taupe;}
+            .form-container {display:grid;grid-template-columns:100%;justify-items:center;}
+            .navigation-bar {display:grid;grid-template-columns:19.5% 19.5% 19.5% 19.5% 19.5%;align-items:center;background-color:black;justify-content:space-between;}
+            .link   {border:2px solid blue;transition-duration:1s;text-align:center;background-color:rgba(0,0,0,0.2);font-size:23px;color:#00539C;text-decoration:none;padding:2px;border-radius:4px;margin-bottom:1px}  
+            .link:hover {text-decoration:underline;background-color:rgba(248, 240, 244, 0.6);border:none}
+            .line {padding-left:30px;color:blue}
+            .destination {text-decoration:none;border:2px solid black;border-radius:1px 10px 1px 10px; padding:5px;color:white}
+            .img-scroll {overflow:auto;white-space:nowrap;width:200px}
+            .agency {max-width:250px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);text-align:center;background-color:white}
+            .explore-items   {display:grid;grid-template-columns:auto auto;justify-content:space-around;padding:5px;background-color:#00539C;grid-gap:5px}
+            .explore   {display:grid;grid-template-columns:35% 60%;justify-content:space-between;background-color:taupe;align-items:center} 
+            .info  {display:grid;grid-template-columns:auto auto auto;justify-content:space-evenly;font-size:15px;color:white;align-items:center}
+            .details {font-size:10px;border:1px solid grey;margin:2px;color:rgba(26, 40, 62, 1)}
+            .map     {display:grid;grid-template-columns:60% 35%;justify-content:space-evenly}
+            .places {font-size:15px;color:blue;font-family:fantasy;} 
+            .links    {text-decoration:none;border:1px solid rgb(51,51,225);border-radius:3px;padding:5px;color:white;background-color:blue;margin:2px}
+            .book  {display:grid;grid-template-columns:30% 65%;justify-content:space-evenly;background-color:taupe}
+            .center {border:1px solid black;background-color:rgba(51,51,225,0.5)}
+        @media only screen and (max-width:600px) 
+        {
+            .content1 {display:grid;grid-template-columns:100%;align-content:center}
+            .link {font-size:15px}
+            .explore {display:grid;grid-template-columns:95%;}
+            .book  {display:grid;grid-template-columns:95%;}
+            .places {font-size:12px}
+        }    
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Cutive+Mono&family=Righteous&display=swap" rel="stylesheet">
+    </head>
+    
 
-        <body>
-           <main>
-                {%if content%}
-                    
-                {%block content%}
+    <body>
+        <main>
+            {%if content%}
                 
-                {%load static%}
-                <div class="home">
+            {%block content%}
+            {%load static%}
+                <div class="navigation-bar">
                     <a href='/' class="link">HOME</a>
                     <a href='/agencies/' class="link" >EXPLORE</a>
                     <a href='/booking/' class="link" >BOOKING</a>
@@ -57,61 +59,61 @@
                     <a href='/logout/' class="link" >LOGOUT</a>
                     
                 </div>
+            {%endblock content%}
+            {%endif%}    
 
-                {%endblock content%}
-                
-                {%endif%}    
-                {%if content1%}
-                    <div class="content1">
-                        {%block content1%}
+            {%if content1%}
+                <div class="content1">
+                    {%block content1%}
 
-                        {%endblock content1%}
-                    </div>
-                {%endif%}    
-                {%if content2%}
-                    <div class="content2">
-                {%block content2%}
-
-                    
-                
-                {%endblock content2%}
-                    </div>
-                {%endif%}
-            </main>
-        <footer>
-            <div class="info">
-                
-                <div>
-                    <div><p>Profile:</p></div>
-                    <div><a href="https://www.instagram.com/itz_me_pavan122/"><img src="{%static "items/instagram.svg"%}" style="width:24px;"></a></div>
-                    <hr>
-                    <div><a href="https://github.com/vpavan2105"><img src="{%static "items/github.svg"%}" style="width:24px; "></a></div>
-                    <hr>
-                    <div><a href="https://www.linkedin.com/in/pavankumar25/"><img src="{%static "items/linkedin.svg"%}" style="width:24px ;"></a></div>
+                    {%endblock content1%}
                 </div>
-                <div>
-                    <p>Info:</p>
-                    <p>About Us</p>
-                    <hr>
-                    <p>Status</p>
-                        <hr>
-                    <p>Privacy Policy</p>    
-                </div>   
-                <div>
-                    <p>Help:</p>
-                    <p>FAQ</p>
-                    <hr>
-                    <p>Services</p>
-                    <hr>
-                    <p>Options</p>
+            {%endif%}   
+
+            {%if content2%}
+                <div class="content2">
+                    {%block content2%}
+
+                        
                     
+                    {%endblock content2%}
                 </div>
-             
-            </div>
+            {%endif%}
+        </main>
+    <footer>
+        <div class="info">
             
+            <div>
+                <div><p>Profile:</p></div>
+                <div><a href="https://www.instagram.com/itz_me_pavan122/"><img src="{%static "items/instagram.svg"%}" style="width:24px;"></a></div>
+                <hr>
+                <div><a href="https://github.com/vpavan2105"><img src="{%static "items/github.svg"%}" style="width:24px; "></a></div>
+                <hr>
+                <div><a href="https://www.linkedin.com/in/pavankumar25/"><img src="{%static "items/linkedin.svg"%}" style="width:24px ;"></a></div>
+            </div>
+            <div>
+                <p>Info:</p>
+                <p>About Us</p>
+                    <hr>
+                <p>Status</p>
+                    <hr>
+                <p>Privacy Policy</p>    
+            </div>   
+            <div>
+                <p>Help:</p>
+                <p>FAQ</p>
+                   <hr>
+                <p>Services</p>
+                   <hr>
+                <p>Options</p>
+                
+            </div>
             <p style="color:white">copyright<img src="{%static "items/copyright.svg" %}" style="width:20px;"></p>
-        </footer>
-        </body>
-    
-    </html>
+        </div>
+        
+       
+    </footer>
+    </body>
+
+</html>
 

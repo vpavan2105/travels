@@ -1,44 +1,45 @@
 {%extends 'items/base.html'%}
 {%block content2%}
 {%load static%}
-<center><h1 style="border:1px solid black;background-color:rgba(51,51,225,0.5)">TRAVEL LINE</h1></center>
-<div class="explore">
-<div class="explore-items">
-    
-     {% for x in agenci %}
-    <div>  
-        <div class="agency">
-            {% if x.id == 1 %}
-                <img src="{% static 'items/company4.jpeg' %}"  width="100%">
-                <p style="padding:10px">Company Name:{{x.agency}}<br>Rating:{{x.rating}}</p>
-            {% elif x.id == 2 %}
-                <img src="{% static 'items/company2.jpeg' %}" width="100%" >
-                <p style="padding:10px">Company Name:{{x.agency}}<br>Rating:{{x.rating}}</p>
-            {% elif x.id == 3 %}
-                <img src="{% static 'items/company3.jpeg' %}" width="100%">
-                <p style="padding:10px">Company Name:{{x.agency}}<br>Rating:{{x.rating}}</p>
-                {% elif x.id == 4 %}
-                <img src="{% static 'items/company5.png' %}" width="100%">
-                <p style="padding:10px">Company Name:{{x.agency}}<br>Rating:{{x.rating}}</p>
-                {% elif x.id == 5 %}
-                <img src="{% static 'items/company4.png' %}" width="100%">
-                <p style="padding:10px">Company Name:{{x.agency}}<br>Rating:{{x.rating}}</p>
-            {% endif %} 
-        </div>
-            {% for y in des %}
-                {% if y.agency_id == x.id %}
-                    <li><a class="destination" href="/route/{{y.id}}">tour plan</a></li>
-                    <br>
-                {% endif %}
-            {% endfor %}
-    </div>
-        {% endfor %}
-    
-</div>
-<div>
-    <h1 style="color:yellow;background-color:blue;font-family:righteous;">click on the tour plan for more  details ...</h1>
-    <img src="{% static 'items/picture.jpg' %}" width="100%" height="50%">
-</div>
-<a class="links"  href=/booking/>book a tour</a>
-<p><a href='/' class="links">Go Back</a></p>
+        <center><h1 class="center">TRAVEL LINE</h1></center>
+        <div class="explore">
+            <div>
+                <h1 style="color:yellow;background-color:blue;font-family:righteous;">click on the tour plan for more  details ...</h1>
+                <img src="{% static 'items/picture.jpg' %}" width="100%" height="50%">
+            </div>
+            <div class="explore-items">
+            
+                {% for x in agenci %}
+                <div>  
+                    <div class="agency">
+                        {% if x.id == 1 %}
+                            <img src="{% static 'items/company4.jpeg' %}"  width="100%" height="200px">
+                            <p style="padding:10px">Company Name:{{x.agency}}<br>Rating:{{x.rating}}</p>
+                        {% elif x.id == 2 %}
+                            <img src="{% static 'items/company2.jpeg' %}" width="100%" height="200px">
+                            <p style="padding:10px">Company Name:{{x.agency}}<br>Rating:{{x.rating}}</p>
+                        {% elif x.id == 3 %}
+                            <img src="{% static 'items/company3.jpeg' %}" width="100%" height="200px">
+                            <p style="padding:10px">Company Name:{{x.agency}}<br>Rating:{{x.rating}}</p>
+                        {% elif x.id == 4 %}
+                            <img src="{% static 'items/company5.png' %}" width="100%" height="200px">
+                            <p style="padding:10px">Company Name:{{x.agency}}<br>Rating:{{x.rating}}</p>
+                        {% elif x.id == 5 %}
+                            <img src="{% static 'items/company4.png' %}" width="100%" height="200px">
+                            <p style="padding:10px">Company Name:{{x.agency}}<br>Rating:{{x.rating}}</p>
+                        {% endif %} 
+                    </div>
+                        {% for y in des %}
+                            {% if y.agency_id == x.id %}
+                                <li><a class="destination" href="/route/{{y.id}}">tour plan</a></li>
+                                <br>
+                            {% endif %}
+                        {% endfor %}
+                </div>
+                {% endfor %}
+            
+            </div>
+
+        <a class="links"  href=/booking/>book a tour</a>
+        <p><a href='/' class="links">Go Back</a></p>
 {%endblock content2%}

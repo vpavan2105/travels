@@ -1,0 +1,51 @@
+<doctype html>
+    <html>
+     
+      <head>
+        <style>
+          .links    {text-decoration:none;border:1px solid rgb(51,51,225);border-radius:3px;padding:5px;color:white;background-color:blue;margin:2px}
+
+          .about {display:grid;grid-template-columns:32% 32% 32%;justify-content:space-between;justify-items: center;align-items: center;font-size:17px}
+          @media only screen and (max-width:600px) {
+            .about {display:grid;grid-template-columns:100%;justify-content:space-between;justify-items: center;align-items: center;font-size:17px} 
+          }
+        </style>
+      </head>
+      <body style="background-color:grey">
+          <h1>About Project</h1>
+          <p>Hi there! I'm pavan kumar,the developer behind Project Travels.This project is about a platform which connects user and the tour companies.</p>
+          <p>Welcome to Project Travels ,your destination for travel planning and booking. This platform is designed to make travel more easy by connecting with travel agencies, each companies offering unique tours around the India. And can book a tour where you can choose your own style of travelling vehicle , food places and resting , days and date according to you convenience.</p>
+          <p>Join us at Project Travels, and let's embark on a journey together—one filled with excitement, discovery, and unforgettable memories.</p>
+          <hr>
+    
+        <div class="about">
+          <div>
+              <h2>About me</h2>
+              <p>I've recently finished my graduation in BSc Data Science. Right now, I'm focusing on becoming a Python developer. I've started a project using the Django framework, which is a bit challenging but also really interesting. I'm learning more about coding and creating websites as I work on it and looking forward to achieve bigger.</p>
+          </div>
+          <div>
+              {%load static%}
+              <img src="{%static "items/profile.jpg" %}" style="width:150px;height:150px;border-radius:125px">
+          </div>
+          <div>
+              <h2>Details</h2>
+              <div>
+                  <p>NAME:<p>
+                    <p>PAVAN KUMAR</p>
+                  <p>AGE:<p>
+                    <p>21</p> 
+                  <p>SKILLS:<p>
+                    <p>HTML,CSS,PYTHON,DJNGO,MYSQL</p>
+              </div>
+              <div>
+                  <a href="https://www.instagram.com/itz_me_pavan122/"><img src="{%static "items/instagram.svg"%}" style="width:22px;"></a>
+              
+                  <a href="https://github.com/vpavan2105"><img src="{%static "items/github.svg"%}" style="width:22px; "></a>
+            
+                  <a href="https://www.linkedin.com/in/pavankumar25/"><img src="{%static "items/linkedin.svg"%}" style="width:22px ;"></a>
+              </div> 
+          </div>
+        </div>
+            <p><a href='/' class="links">Go Back</a></p>
+      </body>
+    </html>
